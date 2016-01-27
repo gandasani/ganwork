@@ -11,8 +11,8 @@
     ],
     "repositories": [
         {
-            "type": "vcs",
-            "url": "https://github.com/gandasani/ganwork"
+            "url": "https://github.com/gandasani/ganwork.git",
+            "type": "git"
         }
     ],
     "require": {
