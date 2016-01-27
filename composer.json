@@ -12,6 +12,7 @@
     ],
     "require": {
         "altorouter/altorouter": "1.1.0",
-        "philo/laravel-blade": "3.*"
+        "philo/laravel-blade": "3.*",
+        "gandasani/medoo": "0.0.1"
     }
 }
