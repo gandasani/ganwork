@@ -1,8 +1,9 @@
 {
     "name": "gandasani/ganwork",
-    "description": "nano powerfull framework.",
+    "description": "Nano powerfull framework.",
     "keywords": ["ganwork", "framework"],
     "license": "MIT",
+    "type": "project",
     "authors": [
         {
             "name": "Ganda Wenang Sani",
@@ -18,10 +19,5 @@
     "require": {
         "altorouter/altorouter": "1.1.0",
         "philo/laravel-blade": "3.*"
-    },
-    "autoload": {
-        "psr-4": {
-    
-        }
     }
 }
