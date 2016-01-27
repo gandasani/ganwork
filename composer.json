@@ -9,6 +9,12 @@
             "email": "wenang.sani@gmail.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/gandasani/ganwork"
+        }
+    ],
     "require": {
         "altorouter/altorouter": "1.1.0",
         "philo/laravel-blade": "3.*"
