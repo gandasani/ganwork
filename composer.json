@@ -11,9 +11,9 @@
         }
     ],
     "require": {
-        "altorouter/altorouter": "1.1.0",
+        "altorouter/altorouter": "1.1.*",
         "philo/laravel-blade": "3.*",
-        "gandasani/medoo": "0.0.1",
-        "phpfastcache/phpfastcache": "3.0.26"
+        "gandasani/medoo": "0.0.*",
+        "phpfastcache/phpfastcache": "3.0.*"
     }
 }
