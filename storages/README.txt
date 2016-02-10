@@ -1,0 +1,1 @@
+you can change this storages path location then change config for storages path in "config/path.php"

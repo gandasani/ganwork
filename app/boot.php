@@ -12,6 +12,7 @@ require_once __DIR__.'/core/helper.php';
 //autoload tools
 require_once config('path.vendor').'/autoload.php';
 
+//load all services
 foreach (glob(__DIR__.'/services/*.php') as $service_file) {
     include_once $service_file;
 }
@@ -36,4 +37,15 @@ if(is_string($router_match['target'])){
     //run class function
     $app = new $route_controller[0];
     $app->$route_controller[1]();
+
+}  elseif( $router_match && is_callable( $router_match['target'] ) ) {
+    
+    //call function
+    call_user_func_array( $router_match['target'], $router_match['params'] );
+    
+} elseif(!$router_match){
+    
+    //show not found page
+    echo $view->make('404');
+    
 }
