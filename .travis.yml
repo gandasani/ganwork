@@ -19,5 +19,8 @@ test:
   username: root
   encoding: utf8
 
+before_install:
+  - mysql -e "create database IF NOT EXISTS db_name;" -uroot
+  
 before_script:
   - mysql -e 'create database db_name;'
