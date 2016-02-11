@@ -8,6 +8,7 @@ php:
   - nightly
   
 install:
+  - /home/travis/.phpenv/versions/5.4/bin/composer self-update
   - composer update --prefer-dist
   
 services:
