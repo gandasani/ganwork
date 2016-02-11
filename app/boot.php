@@ -27,7 +27,7 @@
     }
 
     /**
-    * load preload.php
+    * include preload.php
     * preload.php will run before your app run
     */
     include_once __DIR__.'/preload.php';
@@ -38,11 +38,12 @@
     */
     $router_match = $router->match();
     
-    if(is_string($router_match['target'])){
+    if( is_string($router_match['target']) ){
         
         /**
          * Get module folder [/] folder name or filename (with the last is class name and filename, before it is folder and namespace) [@] function
          * for load function in routes
+         * @var array $route_controller
          */
         $route_controller = explode('@', $router_match['target']);
         
@@ -58,9 +59,9 @@
         //call function
         call_user_func_array( $router_match['target'], $router_match['params'] );
         
-    } elseif(!$router_match){
+    } elseif( !$router_match ){
         
-        //show not found page
-        echo $view->make('404');
+        //die and show not found page
+        die( $view->make('404') );
         
     }
