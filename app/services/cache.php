@@ -1,4 +1,7 @@
 <?php
 
-//load cache | $cache
-$cache = phpFastCache();
+    /**
+    * load phpFastCache
+    * @var object $cache
+    */
+    $cache = phpFastCache();

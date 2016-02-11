@@ -2,6 +2,9 @@
 
 class Translate {
     
+    /**
+    * load translate file
+    */
     public function file($file){
         if(file_exists($file)){
             include_once $file;
@@ -11,10 +14,20 @@ class Translate {
         }
     }
     
+    /**
+    * set translation
+    * @param string $text_key
+    * @param string $value
+    */
     public function set($text_key, $val){
         $this->translate[$text_key] = $val;
     }
     
+    /**
+    * get translation
+    * @param string $text_key
+    * @return string
+    */
     public function get($text_key){
         if($this->translate[$text_key]){
             return $this->translate[$text_key];

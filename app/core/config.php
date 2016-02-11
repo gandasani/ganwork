@@ -7,10 +7,9 @@ class LoadConfig {
         $this->config_path = $path;
     }
     
-    /*!
-     * create()
-     * load all config in config path
-     * return config in array 
+    /**
+     * load all config in path
+     * @return array 
      */
     public function create(){
         foreach (glob($this->config_path.'/*.php') as $config_file) {

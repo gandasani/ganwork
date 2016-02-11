@@ -2,15 +2,16 @@
 
 class LoadRoutes {
     
-    //set module path
+    /**
+    * set module path
+    */
     public function path($path){
         $this->module_path = $path;
     }
-    
-    /* function all()
-     * include all modules in folder module
-     */
-    
+     
+    /**
+    * include all module routes.php in folder modules
+    */
     public function all(){
         
         global $router;
@@ -31,9 +32,10 @@ class LoadRoutes {
     }
     
     
-    /* function load()
-     * include all modules in array given
-     */
+    /**
+    * include module routes.php in folder modules
+    * @param Array $modules
+    */
     public function load($modules = []){
         
         global $router;
