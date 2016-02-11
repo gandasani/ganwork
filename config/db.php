@@ -3,8 +3,8 @@
 $CONFIG = [
     'type'      => 'mysql',
     'host'      => 'localhost',
-    'username'  => 'root',
-    'password'  => '',
+    'username'  => 'username',
+    'password'  => 'password',
     'db_name'   => 'db_name',
     'prefix'    => 'prefix_',
    	'charset'   => 'utf8',

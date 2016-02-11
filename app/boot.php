@@ -2,7 +2,7 @@
 
     /**
     * load config class and set to $config var
-    * @var object
+    * @var array $config
     */
     require_once __DIR__.'/core/config.php';
     $config = new \App\Core\LoadConfig;
@@ -39,6 +39,7 @@
     $router_match = $router->match();
     
     if(is_string($router_match['target'])){
+        
         /**
          * Get module folder [/] folder name or filename (with the last is class name and filename, before it is folder and namespace) [@] function
          * for load function in routes
