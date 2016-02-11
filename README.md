@@ -4,6 +4,14 @@ Smart Micro Framework
 
 Ganwork is microframework, this framework for you who want to create very fast small website and use low memory
 
-# How To install Ganwork
-you may also install Laravel by issuing the Composer create-project command in your terminal:
+## Get Started
+
+### Install via composer
+you may install Laravel by issuing the Composer create-project command in your terminal:
+```
 composer create-project --prefer-dist gandasani/ganwork blog
+```
+
+## License
+
+Ganwork is under the MIT license.
