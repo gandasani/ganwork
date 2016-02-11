@@ -7,7 +7,7 @@ Ganwork is microframework, this framework for you who want to create very fast s
 ## Get Started
 
 ### Install via composer
-you may install Laravel by issuing the Composer create-project command in your terminal:
+you may install Ganwork by issuing the Composer create-project command in your terminal:
 ```
 composer create-project --prefer-dist gandasani/ganwork blog
 ```
