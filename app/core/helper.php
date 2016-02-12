@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @author Ganda Wenang Sani
+ * @author Ganda Wenang Sani < wenang.sani@gmail.com >
  * @copyright 2016
  */
 
@@ -25,7 +25,7 @@ function t( $text_key )
 
 function path( $path )
 {
-	return config( 'path.base_path' ) . $path;
+	return config( 'path.base_path' ) .'/'. $path;
 }
 
 function redirect( $url )
@@ -96,4 +96,28 @@ function get_post( $post_list = array( ) )
 	$_POST = array( );
 	
 	return $output;
+}
+
+function tool($tool_name, $config = null)
+{
+    
+    if( file_exists(config('path.base_path').'/app/tools/'.$tool_name.'/'.$tool_name.'.php') ) {
+        
+        include_once config('path.base_path').'/app/tools/'.$tool_name.'/'.$tool_name.'.php';
+        $tool = '\\app\\tool\\'.$tool_name.'\\'.$tool_name;
+        
+        if(is_null($config)){
+            $output = new $tool;
+        } else {
+            $output = new $tool($config);
+        }
+        
+        return $output;
+        
+    } else {
+        
+        return false;
+        
+    }
+    
 }

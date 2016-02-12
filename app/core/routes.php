@@ -7,7 +7,7 @@ class LoadRoutes
 	/**
 	 * set module path
 	 */
-	public function path( $path )
+	public function __construct( $path )
 	{
 		$this->module_path = $path;
 	}

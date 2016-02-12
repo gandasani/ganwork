@@ -13,16 +13,5 @@
     $dbc->connection($db, $cache);
     
     /**
-    * set router base path
-    */
-    $router->setBasePath('/');
-    
-    /**
-     * use $loadroutes->all(); for load all
-     * $loadroutes->load([array]); for load only you need
-     */
-    $loadroutes->all();
-    
-    /**
      * Add Preload Below
      */

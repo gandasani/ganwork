@@ -2,7 +2,7 @@
 
 Smart Micro Framework
 
-Ganwork is microframework, this framework for you who want to create very fast small website and use low memory
+Ganwork is Microframework, focus on memory usage, speed and easy to learn.
 
 ## Get Started
 
@@ -11,6 +11,9 @@ you may install Ganwork by issuing the Composer create-project command in your t
 ```
 composer create-project --prefer-dist gandasani/ganwork blog
 ```
+
+### Edit Configutation File
+you may change configuration value in folder "config"
 
 ## License
 

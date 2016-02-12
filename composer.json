@@ -1,7 +1,7 @@
 {
     "name": "gandasani/ganwork",
-    "description": "Nano powerfull framework.",
-    "keywords": ["ganwork", "framework"],
+    "description": "MicroFramework, focus on memory usage, speed and easy to learn.",
+    "keywords": ["Microframework", "Framework", "PHP"],
     "license": "MIT",
     "type": "project",
     "authors": [

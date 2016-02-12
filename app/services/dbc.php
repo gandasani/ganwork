@@ -2,7 +2,7 @@
 
     /**
     * Class for get and select database with caching
-    * load this class from preload or before db and cache
+    * load this class from preload.php or before db and cache
     */
     
     class DbCacheService {
