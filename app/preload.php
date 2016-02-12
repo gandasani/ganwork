@@ -6,6 +6,13 @@
     */
     
     /**
+    * start db with caching
+    * @global Object $dbc
+    */
+    $dbc = new DbCacheService;
+    $dbc->connection($db, $cache);
+    
+    /**
     * set router base path
     */
     $router->setBasePath('/');
@@ -15,11 +22,6 @@
      * $loadroutes->load([array]); for load only you need
      */
     $loadroutes->all();
-    
-    /**
-    * start session
-    */
-    $session->start_session();
     
     /**
      * Add Preload Below

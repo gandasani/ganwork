@@ -6,7 +6,7 @@
  * more info http://medoo.in/api/new
  */
 
-$CONFIG = [
+$CONFIG = array(
     'type'          => '',
     'host'          => '',
     'username'      => '',
@@ -16,5 +16,5 @@ $CONFIG = [
    	'charset'       => 'utf8',
 	'port'          => 3306,
     'database_file' => '', // for sqlite
-    'option'        => [ PDO::ATTR_CASE => PDO::CASE_NATURAL ]
-];
+    'option'        => array( PDO::ATTR_CASE => PDO::CASE_NATURAL )
+);

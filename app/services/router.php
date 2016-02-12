@@ -5,14 +5,14 @@
     /**
      * Create Route
      * for add routes use $router in every modules
-     * @var object $router
+     * @global object $router
      */
     
     $router = new AltoRouter();
     
     /**
      * Load Module Path for router
-     * @var object $loadroutes
+     * @global object $loadroutes
      */
     $loadroutes = new \App\Core\LoadRoutes;
     $loadroutes->path(config('path.modules'));
